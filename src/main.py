@@ -14,11 +14,11 @@ root = tk.Tk()
 root.title("デジタル時計")
 root.geometry("300x150")
 
-label = tk.label(root, font=("Helvetica", 48), bg="black", fg="cyan")
+label = tk.Label(root, font=("Helvetica", 48), bg="black", fg="cyan")
 label.pack(expand=True, fill="both")
 
 #時間を更新
-update_time
+update_time()
 
 #画面を動かし続ける
 root.mainloop() # コレがないと一瞬で消える
